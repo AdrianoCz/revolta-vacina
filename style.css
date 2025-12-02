@@ -1,4 +1,4 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
 * {
@@ -6,7 +6,7 @@
   padding: 0;
 }
 :root{
-  --grid-item-size: 15vw;
+  --grid-item-size: 13vw;
 }
 body {
   font-family: "Montserrat";
@@ -105,9 +105,10 @@ li a:hover{
   display: flex;
   justify-content: center;
 }
-.obj p {
-  text-align: left;
-  width: 40ch
+#obj p {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
 }
 .obj{
   display: flex;
@@ -115,13 +116,12 @@ li a:hover{
   justify-content: center;
   align-items: center;
   width: auto;
-    padding: 4rem 3.5rem;
+padding: 4rem 3.5rem;
   background-color: rgb(255, 255, 255);
   box-shadow: 0rem 0rem 0.3rem 0.1rem black;
   width: 80%;
 }
 .obj div{
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 4em;
@@ -155,9 +155,9 @@ h2, .aboutUs h3{
 #como{
   display: flex;
   justify-content: center;
-  margin: 2rem 0rem;
-  gap: 16%;
-  width: 100%;
+  margin: 2rem 0em;
+  width: 85%;
+  gap: 10%
 }
 .separator {
   height: 10rem;
@@ -177,7 +177,6 @@ h2, .aboutUs h3{
   background-color: rgb(255, 255, 255);
   box-shadow: 0rem 0rem 0.2rem  black;
   border-radius: .5rem;
-  padding: 0.5rem
 }
 .ghead{
   height: 20%;
@@ -200,6 +199,10 @@ h2, .aboutUs h3{
   height: 80%;
   text-align: center;
   font-size: 1.2rem;
+  overflow: auto;
+}
+.gbody > * {
+    padding: 0.5rem;
 }
 #subscribe{
   display: flex;
@@ -221,6 +224,12 @@ form{
   border-radius: 0.5rem;
   box-shadow: 0 0 0.2rem black;
 }
+form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 label{
   font-size: larger;
   font-family: 'chivo';
@@ -231,6 +240,7 @@ input[type="text"]{
   padding-right: 1rem;
   border: 1px solid rgb(131, 131, 131);
   border-radius: 5rem;
+  transition: all 0.3s ease-in-out;
 }
 button{
   border: none;
