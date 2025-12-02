@@ -1,1 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --grid-item-size: 13vw;
+}
+body {
+  font-family: "Montserrat";
+  background-color: rgb(226, 226, 255);
+}
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10%;
+}
+p,
+span{
+  font-family: "chivo";
+}
 
+header{
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+nav {
+  height: 6rem;
+  background-color: rgb(0, 45, 97);
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+}
+nav div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#pcb{
+  height: 4rem;
+}
+.linha{
+  border-left: 2px solid  rgb(255, 255, 255);
+  margin: 0.4rem 0;
+  align-self: normal;
+}
+ul{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  color: #ffffff;
+}
+li a{
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "zalando sans expanded";
+  transition: all 0.3s ease-in-out;
+}
+li a:hover{
+  text-shadow: 0 0 0.2rem white;
+}
+#logo {
+  color: white;
+  font-weight: bolder;
+  height: 5rem;
+}
+#intro, #aboutUs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+#intro img, #aboutUs img{
+  width: 40%;
+  filter: drop-shadow(0rem 0rem 0.2rem black);
+}
+.intro, .aboutUs, .como{
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0rem 0rem 0.3rem 0.1rem black;
+}
+.intro p, .aboutUs p, #obj p, .como p{
+ width: 80%;
+ font-size: 1.5rem;
+ text-align: justify;
+}
+#obj{
+  display: flex;
+  justify-content: center;
+}
+#obj p {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+.obj{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+padding: 4rem 3.5rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0rem 0rem 0.3rem 0.1rem black;
+  width: 80%;
+}
+.obj div{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+.obj div img{
+  width: 30%;
+
+}
+.intro h1, .aboutUs h2, #obj h2, .como h2, #subscribe h2 {
+  font-size: 3em;
+text-align: center;
+  font-weight: 800;
+}
+h2, .aboutUs h3{
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.como{
+  width: 30%;
+  word-break: break-alll;
+  word-wrap: break-word;
+
+}
+.como p{
+  text-align: left;
+}
+.como h2{
+  font-size: 2.4rem;
+}
+#como{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0em;
+  width: 85%;
+  gap: 10%
+}
+.separator {
+  height: 10rem;
+  border-left: 2px solid black;
+}
+.grid{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: var(--grid-item-size) var(--grid-item-size);
+  grid-template-rows: var(--grid-item-size) var(--grid-item-size);
+  gap: 2em;
+}
+.grid > div{
+  width: var(--grid-item-size);
+  height: var(--grid-item-size);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0rem 0rem 0.2rem  black;
+  border-radius: .5rem;
+}
+.ghead{
+  height: 20%;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  background-color: rgb(0, 113, 243);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ghead h2{
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.gbody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  text-align: center;
+  font-size: 1.2rem;
+  overflow: auto;
+}
+.gbody > * {
+    padding: 0.5rem;
+}
+#subscribe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+form{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(0, 45, 97);
+  gap: 3rem;
+  padding: 5rem;
+  background-color: white;
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.2rem black;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+  font-size: larger;
+  font-family: 'chivo';
+}
+input[type="text"]{
+  height: 2rem;
+  width: 50ch;
+  padding-right: 1rem;
+  border: 1px solid rgb(131, 131, 131);
+  border-radius: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+button{
+  border: none;
+  border-radius: 77rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 45, 97);
+  font-weight: 700;
+  color: white  ;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out; 
+}
+button:hover{
+  background-color: rgb(0, 113, 243);
+
+}
